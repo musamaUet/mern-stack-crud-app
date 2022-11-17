@@ -9,18 +9,18 @@
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "2.1.1"
+    "react-scripts": "5.0.1"
   },
   "proxy": "http://localhost:4000",
   "engines": {
     "node": "11.15.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "node init && react-scripts start",
+    "build": "node init && react-scripts build",
     "test": "react-scripts test",
     "api": "npm run start --prefix api",
-    "dev": "concurrently \"npm run api\" \"nodemon server\"",
+    "dev": "node init && concurrently \"npm run api\" \"nodemon server\"",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
