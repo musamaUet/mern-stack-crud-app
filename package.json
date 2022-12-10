@@ -16,11 +16,11 @@
     "node": "11.15.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "node init && react-scripts start",
+    "build": "node init && react-scripts build",
     "test": "react-scripts test",
     "api": "npm run start --prefix api",
-    "dev": "concurrently \"npm run api\" \"nodemon server\"",
+    "dev": "node init && concurrently \"npm run api\" \"nodemon server\"",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
